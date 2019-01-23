@@ -1,8 +1,9 @@
 {
   "name": "@superjs/require-auto",
   "version": "1.0.1",
-  "description": "require or auto install when missing",
+  "description": "start node script without node_modules, install on require",
   "main": "index.js",
+  "bin": "cli.js",
   "engines": {
     "node": ">=6"
   },
@@ -15,24 +16,19 @@
   "keywords": [
     "super",
     "superjs",
-    "wait",
-    "await",
-    "awaitor",
-    "cb",
-    "awaitable",
-    "waitable",
-    "callback",
-    "thunk",
-    "promise",
-    "async",
-    "sync",
-    "es7",
-    "debug"
+    "require",
+    "auto",
+    "npm",
+    "require-auto",
+    "dependency",
+    "script",
+    "node",
+    "node-auto"
   ],
   "bugs": {
-    "url": "https://github.com/jinCN/cb/issues"
+    "url": "https://github.com/jinCN/require-auto/issues"
   },
-  "homepage": "https://github.com/jinCN/cb#readme",
+  "homepage": "https://github.com/jinCN/require-auto#readme",
   "scripts": {
     "lint": "standard --fix | snazzy"
   },
@@ -52,5 +48,9 @@
       "standard --fix",
       "git add"
     ]
+  },
+  "dependencies": {
+    "edit-json-file": "^1.2.1",
+    "require-hacker": "^3.0.1"
   }
 }
